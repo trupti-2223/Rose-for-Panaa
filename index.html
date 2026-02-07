@@ -63,6 +63,7 @@
             font-size: 34px;
             margin-top: 10px;
             min-height: 45px;
+            font-weight: 600;
         }
 
         p {
@@ -70,6 +71,7 @@
             margin-top: 15px;
         }
 
+        /* Floating hearts */
         .heart {
             position: absolute;
             bottom: -20px;
@@ -96,11 +98,7 @@
 </div>
 
 <!-- MAIN CONTENT -->
-<div id="content" onclick="playMusic()">
-    <audio id="bgm" loop>
-        <source src="music.mp3" type="audio/mpeg">
-    </audio>
-
+<div id="content">
     <div class="box">
         <h1>🌹 Happy Rose Day 🌹</h1>
 
@@ -111,8 +109,6 @@
             <br><br>
             Once Again Happy Rose Day..! 🌹
         </p>
-
-        <small>💖 Tap anywhere for music 💖</small>
     </div>
 </div>
 
@@ -154,11 +150,7 @@
         document.body.appendChild(heart);
         setTimeout(() => heart.remove(), 7000);
     }
-
-    function playMusic() {
-        document.getElementById("bgm").play();
-    }
 </script>
 
 </body>
-</html> 
+</html>
